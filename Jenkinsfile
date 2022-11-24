@@ -9,6 +9,7 @@ pipeline {
     stages {
         stage("init") {
             steps {
+                echo 'trying the pull trigger...'
                 script {
                    gv = load "script.groovy" 
                 }
